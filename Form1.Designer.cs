@@ -37,42 +37,51 @@
             // 
             // bPlansza1
             // 
-            this.bPlansza1.Location = new System.Drawing.Point(622, 167);
+            this.bPlansza1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.bPlansza1.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.bPlansza1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.bPlansza1.Location = new System.Drawing.Point(279, 169);
             this.bPlansza1.Name = "bPlansza1";
-            this.bPlansza1.Size = new System.Drawing.Size(143, 46);
+            this.bPlansza1.Size = new System.Drawing.Size(143, 61);
             this.bPlansza1.TabIndex = 1;
-            this.bPlansza1.Text = "plansza 1";
-            this.bPlansza1.UseVisualStyleBackColor = true;
+            this.bPlansza1.Text = "Plansza na rozgrzewkę :)";
+            this.bPlansza1.UseVisualStyleBackColor = false;
             this.bPlansza1.Click += new System.EventHandler(this.bPlansza1_Click);
             // 
             // bPlansza2
             // 
+            this.bPlansza2.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.bPlansza2.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.bPlansza2.Location = new System.Drawing.Point(452, 168);
             this.bPlansza2.Name = "bPlansza2";
-            this.bPlansza2.Size = new System.Drawing.Size(143, 45);
+            this.bPlansza2.Size = new System.Drawing.Size(143, 62);
             this.bPlansza2.TabIndex = 2;
-            this.bPlansza2.Text = "plansza 2";
-            this.bPlansza2.UseVisualStyleBackColor = true;
+            this.bPlansza2.Text = "Plansza trudniejsza";
+            this.bPlansza2.UseVisualStyleBackColor = false;
             this.bPlansza2.Click += new System.EventHandler(this.bPlansza2_Click);
             // 
             // bPlansza3
             // 
-            this.bPlansza3.Location = new System.Drawing.Point(269, 169);
+            this.bPlansza3.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.bPlansza3.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.bPlansza3.Location = new System.Drawing.Point(624, 169);
             this.bPlansza3.Name = "bPlansza3";
-            this.bPlansza3.Size = new System.Drawing.Size(143, 44);
+            this.bPlansza3.Size = new System.Drawing.Size(143, 61);
             this.bPlansza3.TabIndex = 3;
-            this.bPlansza3.Text = "plansza 3";
-            this.bPlansza3.UseVisualStyleBackColor = true;
+            this.bPlansza3.Text = "Plansza trudniejsza";
+            this.bPlansza3.UseVisualStyleBackColor = false;
             this.bPlansza3.Click += new System.EventHandler(this.bPlansza3_Click);
             // 
             // bInstrukcja
             // 
+            this.bInstrukcja.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.bInstrukcja.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.bInstrukcja.Location = new System.Drawing.Point(55, 105);
             this.bInstrukcja.Name = "bInstrukcja";
             this.bInstrukcja.Size = new System.Drawing.Size(165, 54);
             this.bInstrukcja.TabIndex = 4;
             this.bInstrukcja.Text = "Instrukcja";
-            this.bInstrukcja.UseVisualStyleBackColor = true;
+            this.bInstrukcja.UseVisualStyleBackColor = false;
             this.bInstrukcja.Click += new System.EventHandler(this.bInstrukcja_Click);
             // 
             // label1
@@ -90,7 +99,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(970, 333);
+            this.ClientSize = new System.Drawing.Size(848, 362);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.bInstrukcja);
             this.Controls.Add(this.bPlansza3);
