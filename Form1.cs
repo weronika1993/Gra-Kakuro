@@ -587,7 +587,7 @@ namespace Kakuro
             TextBox p227 = new TextBox();
             p227.Width = 50;
             p227.Height = 40;
-            p227.Location = new Point(260, 220);
+            p227.Location = new Point(110, 260);
             if (p227.Text == "1")
             {
                 p227.BackColor = Color.Green;
@@ -595,6 +595,71 @@ namespace Kakuro
             else
             {
                 p227.BackColor = Color.FloralWhite;
+            }
+
+            TextBox p228 = new TextBox();
+            p228.Width = 50;
+            p228.Height = 40;
+            p228.Location = new Point(160, 220);
+            if (p228.Text == "3")
+            {
+                p228.BackColor = Color.Green;
+            }
+            else
+            {
+                p228.BackColor = Color.FloralWhite;
+            }
+
+            TextBox p230 = new TextBox();
+            p230.Width = 50;
+            p230.Height = 40;
+            p230.Location = new Point(260, 260);
+            if (p230.Text == "1")
+            {
+                p230.BackColor = Color.Green;
+            }
+            else
+            {
+                p230.BackColor = Color.FloralWhite;
+            }
+
+            TextBox p231 = new TextBox();
+            p231.Width = 50;
+            p231.Height = 40;
+            p231.Location = new Point(310, 260);
+            if (p231.Text == "3")
+            {
+                p231.BackColor = Color.Green;
+            }
+            else
+            {
+                p231.BackColor = Color.FloralWhite;
+            }
+
+            TextBox p233 = new TextBox();
+            p233.Width = 50;
+            p233.Height = 40;
+            p233.Location = new Point(260, 300);
+            if (p233.Text == "2")
+            {
+                p233.BackColor = Color.Green;
+            }
+            else
+            {
+                p233.BackColor = Color.FloralWhite;
+            }
+
+            TextBox p234 = new TextBox();
+            p234.Width = 50;
+            p234.Height = 40;
+            p234.Location = new Point(310, 300);
+            if (p234.Text == "1")
+            {
+                p234.BackColor = Color.Green;
+            }
+            else
+            {
+                p234.BackColor = Color.FloralWhite;
             }
 
             #endregion pola
@@ -627,6 +692,11 @@ namespace Kakuro
             plansza2.Controls.Add(p223);
             plansza2.Controls.Add(p224);
             plansza2.Controls.Add(p227);
+            plansza2.Controls.Add(p228);
+            plansza2.Controls.Add(p230);
+            plansza2.Controls.Add(p231);
+            plansza2.Controls.Add(p233);
+            plansza2.Controls.Add(p234);
             plansza2.ShowDialog();
         }
 
