@@ -26,7 +26,7 @@ namespace Kakuro
         {
             Label instrukcja = new Label();
             instrukcja.Text = "Kakuro jest to numeryczna krzyżówka. Polega na wpisywaniu cyfr od 1 do 9 tak, aby zsumowały się do liczby wskazanej w pionowym" +
-                "lub poziomym bloku. W jednym bloku nie mogą się powtarzać takie same cyfry. Jeśli cyfra jest poprawna to zmieni kolor na zielony." +
+                "lub poziomym bloku. W jednym bloku nie mogą się powtarzać takie same cyfry. Jeśli cyfra jest poprawna to tło zmieni kolor na zielony." +
                 "Cyfra przy której stoi strzałka oznacza sumę w rzędzie poziomym, zaś cyfra przed znaczkiem '|' oznacza sumę w rzędzie pionowym.";
             instrukcja.Font = new System.Drawing.Font("Arial", 5, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Millimeter, ((byte)(60)));
             instrukcja.Location = new Point(20, 20);
@@ -297,6 +297,7 @@ namespace Kakuro
             plansza2.BackColor = Color.AntiqueWhite;
             plansza2.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
 
+            #region instrukcja
             Label p21 = new Label();
             p21.Text = "4|";
             p21.Font = new System.Drawing.Font("Arial", 4, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Millimeter, ((byte)(60)));
@@ -335,21 +336,21 @@ namespace Kakuro
             Label p28 = new Label();
             p28.Text = "3>";
             p28.Font = new System.Drawing.Font("Arial", 4, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Millimeter, ((byte)(60)));
-            p28.Location = new Point(310, 100);
+            p28.Location = new Point(110, 140);
             p28.Width = 50;
             p28.Height = 40;
 
             Label p211 = new Label();
             p211.Text = "11|4>";
             p211.Font = new System.Drawing.Font("Arial", 4, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Millimeter, ((byte)(60)));
-            p211.Location = new Point(310, 140);
+            p211.Location = new Point(260, 140);
             p211.Width = 50;
             p211.Height = 40;
 
             Label p214 = new Label();
             p214.Text = "3|";
             p214.Font = new System.Drawing.Font("Arial", 4, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Millimeter, ((byte)(60)));
-            p214.Location = new Point(110, 160);
+            p214.Location = new Point(110, 180);
             p214.Width = 50;
             p214.Height = 40;
 
@@ -357,7 +358,7 @@ namespace Kakuro
             Label p215 = new Label();
             p215.Text = "4|10>";
             p215.Font = new System.Drawing.Font("Arial", 4, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Millimeter, ((byte)(60)));
-            p215.Location = new Point(160, 160);
+            p215.Location = new Point(160, 180);
             p215.Width = 50;
             p215.Height = 40;
 
@@ -365,31 +366,238 @@ namespace Kakuro
             Label p220 = new Label();
             p220.Text = "11|";
             p220.Font = new System.Drawing.Font("Arial", 4, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Millimeter, ((byte)(60)));
-            p220.Location = new Point(60, 200);
+            p220.Location = new Point(60, 220);
             p220.Width = 50;
             p220.Height = 40;
+
+            Label p225 = new Label();
+            p225.Text = "4|";
+            p225.Font = new System.Drawing.Font("Arial", 4, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Millimeter, ((byte)(60)));
+            p225.Location = new Point(310, 220);
+            p225.Width = 50;
+            p225.Height = 40;
 
             Label p226 = new Label();
             p226.Text = "4>";
             p226.Font = new System.Drawing.Font("Arial", 4, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Millimeter, ((byte)(60)));
-            p226.Location = new Point(60, 240);
+            p226.Location = new Point(60, 260);
             p226.Width = 50;
             p226.Height = 40;
 
             Label p229 = new Label();
             p229.Text = "4>";
             p229.Font = new System.Drawing.Font("Arial", 4, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Millimeter, ((byte)(60)));
-            p229.Location = new Point(210, 240);
+            p229.Location = new Point(210, 260);
             p229.Width = 50;
             p229.Height = 40;
 
             Label p232 = new Label();
             p232.Text = "3>";
             p232.Font = new System.Drawing.Font("Arial", 4, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Millimeter, ((byte)(60)));
-            p232.Location = new Point(60, 200);
+            p232.Location = new Point(210, 300);
             p232.Width = 50;
             p232.Height = 40;
+            #endregion instrukcja
+#region pola
+            TextBox p24 = new TextBox();
+            p24.Width = 50;
+            p24.Height = 40;
+            p24.Location = new Point(160, 100);
+            if (p24.Text == "3")
+            {
+                p24.BackColor = Color.Green;
+            }
+            else
+            {
+                p24.BackColor = Color.FloralWhite;
+            }
 
+            TextBox p25 = new TextBox();
+            p25.Width = 50;
+            p25.Height = 40;
+            p25.Location = new Point(210, 100);
+            if (p25.Text == "1")
+            {
+                p25.BackColor = Color.Green;
+            }
+            else
+            {
+                p25.BackColor = Color.FloralWhite;
+            }
+
+            TextBox p29 = new TextBox();
+            p29.Width = 50;
+            p29.Height = 40;
+            p29.Location = new Point(160, 140);
+            if (p29.Text == "1")
+            {
+                p29.BackColor = Color.Green;
+            }
+            else
+            {
+                p29.BackColor = Color.FloralWhite;
+            }
+
+            TextBox p210 = new TextBox();
+            p210.Width = 50;
+            p210.Height = 40;
+            p210.Location = new Point(210, 140);
+            if (p210.Text == "2")
+            {
+                p210.BackColor = Color.Green;
+            }
+            else
+            {
+                p210.BackColor = Color.FloralWhite;
+            }
+
+            TextBox p212 = new TextBox();
+            p212.Width = 50;
+            p212.Height = 40;
+            p212.Location = new Point(310, 140);
+            if (p212.Text == "1")
+            {
+                p212.BackColor = Color.Green;
+            }
+            else
+            {
+                p212.BackColor = Color.FloralWhite;
+            }
+
+            TextBox p213 = new TextBox();
+            p213.Width = 50;
+            p213.Height = 40;
+            p213.Location = new Point(360, 140);
+            if (p213.Text == "3")
+            {
+                p213.BackColor = Color.Green;
+            }
+            else
+            {
+                p213.BackColor = Color.FloralWhite;
+            }
+
+            TextBox p216 = new TextBox();
+            p216.Width = 50;
+            p216.Height = 40;
+            p216.Location = new Point(210, 180);
+            if (p216.Text == "4")
+            {
+                p216.BackColor = Color.Green;
+            }
+            else
+            {
+                p216.BackColor = Color.FloralWhite;
+            }
+
+            TextBox p217 = new TextBox();
+            p217.Width = 50;
+            p217.Height = 40;
+            p217.Location = new Point(260, 180);
+            if (p217.Text == "3")
+            {
+                p217.BackColor = Color.Green;
+            }
+            else
+            {
+                p217.BackColor = Color.FloralWhite;
+            }
+
+            TextBox p218 = new TextBox();
+            p218.Width = 50;
+            p218.Height = 40;
+            p218.Location = new Point(310, 180);
+            if (p218.Text == "2")
+            {
+                p218.BackColor = Color.Green;
+            }
+            else
+            {
+                p218.BackColor = Color.FloralWhite;
+            }
+
+            TextBox p219 = new TextBox();
+            p219.Width = 50;
+            p219.Height = 40;
+            p219.Location = new Point(360, 180);
+            if (p219.Text == "1")
+            {
+                p219.BackColor = Color.Green;
+            }
+            else
+            {
+                p219.BackColor = Color.FloralWhite;
+            }
+
+            TextBox p221 = new TextBox();
+            p221.Width = 50;
+            p221.Height = 40;
+            p221.Location = new Point(110, 220);
+            if (p221.Text == "2")
+            {
+                p221.BackColor = Color.Green;
+            }
+            else
+            {
+                p221.BackColor = Color.FloralWhite;
+            }
+
+
+            TextBox p222 = new TextBox();
+            p222.Width = 50;
+            p222.Height = 40;
+            p222.Location = new Point(160, 220);
+            if (p221.Text == "1")
+            {
+                p222.BackColor = Color.Green;
+            }
+            else
+            {
+                p222.BackColor = Color.FloralWhite;
+            }
+
+
+            TextBox p223 = new TextBox();
+            p223.Width = 50;
+            p223.Height = 40;
+            p223.Location = new Point(210, 220);
+            if (p223.Text == "3")
+            {
+                p223.BackColor = Color.Green;
+            }
+            else
+            {
+                p223.BackColor = Color.FloralWhite;
+            }
+
+
+            TextBox p224 = new TextBox();
+            p224.Width = 50;
+            p224.Height = 40;
+            p224.Location = new Point(260, 220);
+            if (p224.Text == "5")
+            {
+                p224.BackColor = Color.Green;
+            }
+            else
+            {
+                p224.BackColor = Color.FloralWhite;
+            }
+
+            TextBox p227 = new TextBox();
+            p227.Width = 50;
+            p227.Height = 40;
+            p227.Location = new Point(260, 220);
+            if (p227.Text == "1")
+            {
+                p227.BackColor = Color.Green;
+            }
+            else
+            {
+                p227.BackColor = Color.FloralWhite;
+            }
+
+            #endregion pola
             plansza2.Controls.Add(p21);
             plansza2.Controls.Add(p22);
             plansza2.Controls.Add(p23);
@@ -400,15 +608,26 @@ namespace Kakuro
             plansza2.Controls.Add(p214);
             plansza2.Controls.Add(p215);
             plansza2.Controls.Add(p220);
+            plansza2.Controls.Add(p225);
             plansza2.Controls.Add(p226);
             plansza2.Controls.Add(p229);
             plansza2.Controls.Add(p232);
+            plansza2.Controls.Add(p24);
+            plansza2.Controls.Add(p25);
+            plansza2.Controls.Add(p29);
+            plansza2.Controls.Add(p210);
+            plansza2.Controls.Add(p212);
+            plansza2.Controls.Add(p213);
+            plansza2.Controls.Add(p216);
+            plansza2.Controls.Add(p217);
+            plansza2.Controls.Add(p218);
+            plansza2.Controls.Add(p219);
+            plansza2.Controls.Add(p221);
+            plansza2.Controls.Add(p222);
+            plansza2.Controls.Add(p223);
+            plansza2.Controls.Add(p224);
+            plansza2.Controls.Add(p227);
             plansza2.ShowDialog();
-        }
-
-        private void bPlansza3_Click(object sender, EventArgs e)
-        {
-
         }
 
        

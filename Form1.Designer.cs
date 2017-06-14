@@ -30,7 +30,6 @@
         {
             this.bPlansza1 = new System.Windows.Forms.Button();
             this.bPlansza2 = new System.Windows.Forms.Button();
-            this.bPlansza3 = new System.Windows.Forms.Button();
             this.bInstrukcja = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -40,7 +39,7 @@
             this.bPlansza1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.bPlansza1.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.bPlansza1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.bPlansza1.Location = new System.Drawing.Point(279, 169);
+            this.bPlansza1.Location = new System.Drawing.Point(344, 169);
             this.bPlansza1.Name = "bPlansza1";
             this.bPlansza1.Size = new System.Drawing.Size(143, 61);
             this.bPlansza1.TabIndex = 1;
@@ -52,25 +51,13 @@
             // 
             this.bPlansza2.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.bPlansza2.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.bPlansza2.Location = new System.Drawing.Point(452, 168);
+            this.bPlansza2.Location = new System.Drawing.Point(572, 169);
             this.bPlansza2.Name = "bPlansza2";
             this.bPlansza2.Size = new System.Drawing.Size(143, 62);
             this.bPlansza2.TabIndex = 2;
-            this.bPlansza2.Text = "Plansza Średnia";
+            this.bPlansza2.Text = "Plansza Trudna";
             this.bPlansza2.UseVisualStyleBackColor = false;
             this.bPlansza2.Click += new System.EventHandler(this.bPlansza2_Click);
-            // 
-            // bPlansza3
-            // 
-            this.bPlansza3.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.bPlansza3.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.bPlansza3.Location = new System.Drawing.Point(624, 169);
-            this.bPlansza3.Name = "bPlansza3";
-            this.bPlansza3.Size = new System.Drawing.Size(143, 61);
-            this.bPlansza3.TabIndex = 3;
-            this.bPlansza3.Text = "Plansza trudniejsza";
-            this.bPlansza3.UseVisualStyleBackColor = false;
-            this.bPlansza3.Click += new System.EventHandler(this.bPlansza3_Click);
             // 
             // bInstrukcja
             // 
@@ -102,7 +89,6 @@
             this.ClientSize = new System.Drawing.Size(848, 362);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.bInstrukcja);
-            this.Controls.Add(this.bPlansza3);
             this.Controls.Add(this.bPlansza2);
             this.Controls.Add(this.bPlansza1);
             this.Name = "Form1";
@@ -115,7 +101,6 @@
         #endregion
         private System.Windows.Forms.Button bPlansza1;
         private System.Windows.Forms.Button bPlansza2;
-        private System.Windows.Forms.Button bPlansza3;
         private System.Windows.Forms.Button bInstrukcja;
         private System.Windows.Forms.Label label1;
     }
