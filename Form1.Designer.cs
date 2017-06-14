@@ -86,11 +86,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(848, 362);
+            this.ClientSize = new System.Drawing.Size(847, 362);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.bInstrukcja);
             this.Controls.Add(this.bPlansza2);
             this.Controls.Add(this.bPlansza1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
