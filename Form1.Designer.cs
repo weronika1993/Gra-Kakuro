@@ -56,7 +56,7 @@
             this.bPlansza2.Name = "bPlansza2";
             this.bPlansza2.Size = new System.Drawing.Size(143, 62);
             this.bPlansza2.TabIndex = 2;
-            this.bPlansza2.Text = "Plansza trudniejsza";
+            this.bPlansza2.Text = "Plansza Średnia";
             this.bPlansza2.UseVisualStyleBackColor = false;
             this.bPlansza2.Click += new System.EventHandler(this.bPlansza2_Click);
             // 

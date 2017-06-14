@@ -46,12 +46,12 @@ namespace Kakuro
             okno1.Controls.Add(instrukcja);
             okno1.ShowDialog();
         }
-
+     
         private void bPlansza1_Click(object sender, EventArgs e)
         {
             Form plansza1 = new Form();
-            plansza1.Width = 600;
-            plansza1.Height = 600;
+            plansza1.Width = 500;
+            plansza1.Height = 500;
             plansza1.Text = "Prosta plansza";
             plansza1.BackColor = Color.AntiqueWhite;
             plansza1.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -83,11 +83,28 @@ namespace Kakuro
             p14.Width = 40;
             p14.Height = 40;
             p14.Location = new Point(200,100);
+            if(p14.Text == "2")
+            {
+                p14.BackColor = Color.Green;
+            }
+            else
+            {
+                p14.BackColor = Color.FloralWhite;
+            }
+            
 
             TextBox p15 = new TextBox();
             p15.Width = 40;
             p15.Height = 40;
             p15.Location = new Point(240, 100);
+            if (p15.Text == "3")
+            {
+                p15.BackColor = Color.Green;
+            }
+            else
+            {
+                p15.BackColor = Color.FloralWhite;
+            }
 
             Label p16 = new Label();
             p16.Text = "9|";
@@ -107,21 +124,55 @@ namespace Kakuro
             p18.Width = 40;
             p18.Height = 40;
             p18.Location = new Point(160, 140);
+            if (p18.Text == "4")
+            {
+                p18.BackColor = Color.Green;
+            }
+            else
+            {
+                p18.BackColor = Color.FloralWhite;
+            }
+
 
             TextBox p19 = new TextBox();
             p19.Width = 40;
             p19.Height = 40;
             p19.Location = new Point(200, 140);
+            if (p19.Text == "8")
+            {
+                p19.BackColor = Color.Green;
+            }
+            else
+            {
+                p19.BackColor = Color.FloralWhite;
+            }
 
             TextBox p110 = new TextBox();
             p110.Width = 40;
             p110.Height = 40;
             p110.Location = new Point(240, 140);
+            if (p110.Text == "9")
+            {
+                p110.BackColor = Color.Green;
+            }
+            else
+            {
+                p110.BackColor = Color.FloralWhite;
+            }
 
             TextBox p111 = new TextBox();
             p111.Width = 40;
             p111.Height = 40;
             p111.Location = new Point(280, 140);
+            if (p111.Text == "7")
+            {
+                p111.BackColor = Color.Green;
+            }
+            else
+            {
+                p111.BackColor = Color.FloralWhite;
+            }
+
 
             Label p112 = new Label();
             p112.Text = "12>";
@@ -134,21 +185,53 @@ namespace Kakuro
             p113.Width = 40;
             p113.Height = 40;
             p113.Location = new Point(160, 180);
+            if (p113.Text == "5")
+            {
+                p113.BackColor = Color.Green;
+            }
+            else
+            {
+                p113.BackColor = Color.FloralWhite;
+            }
 
             TextBox p114 = new TextBox();
             p114.Width = 40;
             p114.Height = 40;
             p114.Location = new Point(200, 180);
+            if (p114.Text == "4")
+            {
+                p114.BackColor = Color.Green;
+            }
+            else
+            {
+                p114.BackColor = Color.FloralWhite;
+            }
 
             TextBox p115 = new TextBox();
             p115.Width = 40;
             p115.Height = 40;
             p115.Location = new Point(240, 180);
+            if (p115.Text == "1")
+            {
+                p115.BackColor = Color.Green;
+            }
+            else
+            {
+                p115.BackColor = Color.FloralWhite;
+            }
 
             TextBox p116 = new TextBox();
             p116.Width = 40;
             p116.Height = 40;
             p116.Location = new Point(280, 180);
+            if (p116.Text == "2")
+            {
+                p116.BackColor = Color.Green;
+            }
+            else
+            {
+                p116.BackColor = Color.FloralWhite;
+            }
 
             Label p117 = new Label();
             p117.Text = "8>";
@@ -161,11 +244,27 @@ namespace Kakuro
             p118.Width = 40;
             p118.Height = 40;
             p118.Location = new Point(200, 220);
+            if (p118.Text == "1")
+            {
+                p118.BackColor = Color.Green;
+            }
+            else
+            {
+                p118.BackColor = Color.FloralWhite;
+            }
 
             TextBox p119 = new TextBox();
             p119.Width = 40;
             p119.Height = 40;
             p119.Location = new Point(240,220);
+            if (p119.Text == "7")
+            {
+                p119.BackColor = Color.Green;
+            }
+            else
+            {
+                p119.BackColor = Color.FloralWhite;
+            }
 
             plansza1.Controls.Add(p11);
             plansza1.Controls.Add(p12);
