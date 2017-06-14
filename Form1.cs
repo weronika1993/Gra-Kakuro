@@ -52,7 +52,7 @@ namespace Kakuro
             Form plansza1 = new Form();
             plansza1.Width = 500;
             plansza1.Height = 500;
-            plansza1.Text = "Prosta plansza";
+            plansza1.Text = "Plansza na rozgrzewkę :)";
             plansza1.BackColor = Color.AntiqueWhite;
             plansza1.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
 
@@ -293,7 +293,7 @@ namespace Kakuro
             Form plansza2 = new Form();
             plansza2.Width = 600;
             plansza2.Height = 600;
-            plansza2.Text = "Średnia plansza";
+            plansza2.Text = "Plansza Trudna";
             plansza2.BackColor = Color.AntiqueWhite;
             plansza2.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
 
@@ -398,7 +398,7 @@ namespace Kakuro
             p232.Width = 50;
             p232.Height = 40;
             #endregion instrukcja
-#region pola
+            #region pola
             TextBox p24 = new TextBox();
             p24.Width = 50;
             p24.Height = 40;
