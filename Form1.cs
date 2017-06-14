@@ -290,7 +290,120 @@ namespace Kakuro
 
         private void bPlansza2_Click(object sender, EventArgs e)
         {
+            Form plansza2 = new Form();
+            plansza2.Width = 600;
+            plansza2.Height = 600;
+            plansza2.Text = "Średnia plansza";
+            plansza2.BackColor = Color.AntiqueWhite;
+            plansza2.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
 
+            Label p21 = new Label();
+            p21.Text = "4|";
+            p21.Font = new System.Drawing.Font("Arial", 4, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Millimeter, ((byte)(60)));
+            p21.Location = new Point(160, 60);
+            p21.Width = 50;
+            p21.Height = 40;
+
+            Label p22 = new Label();
+            p22.Text = "10|";
+            p22.Font = new System.Drawing.Font("Arial", 4, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Millimeter, ((byte)(60)));
+            p22.Location = new Point(210, 60);
+            p22.Width = 50;
+            p22.Height = 40;
+
+            Label p23 = new Label();
+            p23.Text = "4>";
+            p23.Font = new System.Drawing.Font("Arial", 4, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Millimeter, ((byte)(60)));
+            p23.Location = new Point(110, 100);
+            p23.Width = 50;
+            p23.Height = 40;
+
+            Label p26 = new Label();
+            p26.Text = "3|";
+            p26.Font = new System.Drawing.Font("Arial", 4, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Millimeter, ((byte)(60)));
+            p26.Location = new Point(310, 100);
+            p26.Width = 50;
+            p26.Height = 40;
+
+            Label p27 = new Label();
+            p27.Text = "3|";
+            p27.Font = new System.Drawing.Font("Arial", 4, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Millimeter, ((byte)(60)));
+            p27.Location = new Point(360, 100);
+            p27.Width = 50;
+            p27.Height = 40;
+
+            Label p28 = new Label();
+            p28.Text = "3>";
+            p28.Font = new System.Drawing.Font("Arial", 4, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Millimeter, ((byte)(60)));
+            p28.Location = new Point(310, 100);
+            p28.Width = 50;
+            p28.Height = 40;
+
+            Label p211 = new Label();
+            p211.Text = "11|4>";
+            p211.Font = new System.Drawing.Font("Arial", 4, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Millimeter, ((byte)(60)));
+            p211.Location = new Point(310, 140);
+            p211.Width = 50;
+            p211.Height = 40;
+
+            Label p214 = new Label();
+            p214.Text = "3|";
+            p214.Font = new System.Drawing.Font("Arial", 4, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Millimeter, ((byte)(60)));
+            p214.Location = new Point(110, 160);
+            p214.Width = 50;
+            p214.Height = 40;
+
+
+            Label p215 = new Label();
+            p215.Text = "4|10>";
+            p215.Font = new System.Drawing.Font("Arial", 4, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Millimeter, ((byte)(60)));
+            p215.Location = new Point(160, 160);
+            p215.Width = 50;
+            p215.Height = 40;
+
+
+            Label p220 = new Label();
+            p220.Text = "11|";
+            p220.Font = new System.Drawing.Font("Arial", 4, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Millimeter, ((byte)(60)));
+            p220.Location = new Point(60, 200);
+            p220.Width = 50;
+            p220.Height = 40;
+
+            Label p226 = new Label();
+            p226.Text = "4>";
+            p226.Font = new System.Drawing.Font("Arial", 4, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Millimeter, ((byte)(60)));
+            p226.Location = new Point(60, 240);
+            p226.Width = 50;
+            p226.Height = 40;
+
+            Label p229 = new Label();
+            p229.Text = "4>";
+            p229.Font = new System.Drawing.Font("Arial", 4, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Millimeter, ((byte)(60)));
+            p229.Location = new Point(210, 240);
+            p229.Width = 50;
+            p229.Height = 40;
+
+            Label p232 = new Label();
+            p232.Text = "3>";
+            p232.Font = new System.Drawing.Font("Arial", 4, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Millimeter, ((byte)(60)));
+            p232.Location = new Point(60, 200);
+            p232.Width = 50;
+            p232.Height = 40;
+
+            plansza2.Controls.Add(p21);
+            plansza2.Controls.Add(p22);
+            plansza2.Controls.Add(p23);
+            plansza2.Controls.Add(p26);
+            plansza2.Controls.Add(p27);
+            plansza2.Controls.Add(p28);
+            plansza2.Controls.Add(p211);
+            plansza2.Controls.Add(p214);
+            plansza2.Controls.Add(p215);
+            plansza2.Controls.Add(p220);
+            plansza2.Controls.Add(p226);
+            plansza2.Controls.Add(p229);
+            plansza2.Controls.Add(p232);
+            plansza2.ShowDialog();
         }
 
         private void bPlansza3_Click(object sender, EventArgs e)
